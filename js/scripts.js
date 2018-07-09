@@ -52,6 +52,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#diceNumberDisplay").text(player1.rollScore)
     player1.rollScore = randomNumber();
+    $("#diceNumberDisplay").text(player1.rollScore)
     $("#roll1Score").text(player1.rollScore);
     player1.rolling();
     $("#roll1Total").text(player1.rollTotal);
@@ -66,6 +67,7 @@ $(document).ready(function() {
   $("button#rollButtonPlayer2").click(function(event) {
     event.preventDefault();
     player2.rollScore = randomNumber();
+    $("#diceNumberDisplay").text(player2.rollScore)
     $("#roll2Score").text(player2.rollScore);
     player2.rolling();
     $("#roll2Total").text(player2.rollTotal);
