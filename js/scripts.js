@@ -50,6 +50,7 @@ $(document).ready(function() {
 
   $("button#rollButtonPlayer1").click(function(event) {
     event.preventDefault();
+    $("#diceNumberDisplay").text(player1.rollScore)
     player1.rollScore = randomNumber();
     $("#roll1Score").text(player1.rollScore);
     player1.rolling();
