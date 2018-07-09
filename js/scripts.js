@@ -56,6 +56,7 @@ $(document).ready(function() {
     $("#roll1Score").text(player1.rollScore);
     player1.rolling();
     $("#roll1Total").text(player1.rollTotal);
+
   });
   $("button#holdButtonPlayer1").click(function(event) {
     event.preventDefault();
@@ -63,6 +64,9 @@ $(document).ready(function() {
     $("#total1Score").text(player1.totalScore);
     $("#roll1Total").empty();
     $("#roll1Score").empty();
+    if (totalScore === 100) {
+      $("#winnerMessage").text(Player1 + " is the winner, Please refresh the page to start a new game")
+    }
   });
   $("button#rollButtonPlayer2").click(function(event) {
     event.preventDefault();
@@ -79,6 +83,9 @@ $(document).ready(function() {
     $("#total2Score").text(player2.totalScore);
     $("#roll2Total").empty();
     $("#roll2Score").empty();
+    if (totalScore === 100) {
+      $("#winnerMessage").text(Player1 + " is the winner, Please refresh the page to start a new game")
+    }
   });
 
 });
