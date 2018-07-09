@@ -16,57 +16,49 @@
 
 <body>
   <div class="container">
-    <div class="row">
+    <div class="row" id="playerDetails">
       <h1><center>Pig Dice Game </center></h1>
-      <div class="col-md-4">
-
+      <div class="col-md-4 col-xs-3">
         <h3>Player 1 Side: </h3>
-
-        <form class="player1Form" action="index.html" method="post">
+        <form id="player1Form" action="index.html" method="post">
           <label for="player1Name">Player Name</label>
           <input type="text" class="player1Name form-group" placeholder="Please Enter Name" required>
-          <button type="submit" name="btn btn-default">Submit</button>
+
         </form>
-        <!-- <h3 id="player1Name"></h3>
-          <p id="currentScore1"></p>
-          <p id="totalScore1"></p> -->
-
-        <button type="button" class="btn btn-primary" id="rollPlayer1"> Roll</button>
-        <button type="button" class="btn btn-danger" id="holdPlayer1"> Hold</button>
-
       </div>
-      <div class="col-md-4">
-
+      <div class="col-md-4 col-xs-3" id="submitButton">
+      <center>  <button id="submitDetails" name="btn btn-default">Submit</button> </center>
       </div>
-
-      <div class="col-md-4">
-        <h1>  </h1>
-
-        <h3>Player 2 Side: </h3>
-
-        <form class="player2Form" action="index.html" method="post">
+      <div class="col-md-4 col-xs-3">
+        <h3>Player 2 Side:</span> </h3>
+        <form id="player2Form" action="index.html" method="post">
           <label for="player2Name">Player Name</label>
           <input type="text" class="player2Name form-group" placeholder="Please Enter Name" required>
-          <button type="submit" name="btn btn-default">Submit</button>
+
         </form>
-
-        <!-- <h2>Player 2</h2>
-          <h3 id="player2Name"></h3>
-
-          <p id="currentScore2"></p>
-          <p id="totalScore2"></p> -->
-
-        <button type="button" class="btn btn-primary" id="rollPlayer2"> Roll</button>
-        <button type="button" class="btn btn-danger" id="holdPlayer2"> Hold</button>
-
       </div>
-
     </div>
-
+    <div class="row" id="gameDetails">
+      <div class="col-md-4 col-xs-3">
+        <h3>Player 1 Side: <span id="player1Name"> </span> </span> </h3>
+        <button type="button" class="btn btn-primary" id="rollButtonPlayer1"> Roll</button>
+        <h5>Roll Score: <span id="roll1Score"></span> </h5>
+        <h5>Roll Total: <span id="roll1Total"></span> </h5>
+        <h5>Total Score: <span id="total1Score"></span> </h5>
+        <button type="button" class="btn btn-danger" id="holdButtonPlayer1">Hold </button>
+      </div>
+      <div class="col-md-4 col-xs-3">
+      </div>
+      <div class="col-md-4 col-xs-3">
+        <h3>Player 2 Side:<span id="player2Name"> </span>  </h3>
+        <button type="button" class="btn btn-primary" id="rollButtonPlayer2"> Roll</button>
+        <h5>Roll Score: <span id="roll2Score"></span> </h5>
+        <h5>Roll Total: <span id="roll2Total"></span> </h5>
+        <h5>Total Score: <span id="total2Score"></span> </h5>
+        <button type="button" class="btn btn-danger" id="holdButtonPlayer2"> Hold</button>
+      </div>
+    </div>
   </div>
-
-
-
 </body>
 
 </html>
